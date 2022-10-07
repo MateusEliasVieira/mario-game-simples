@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* font-family: 'Silkscreen', cursive; */
+
+#game-board{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #333;
+    border-bottom: 10px solid rgb(16, 210, 16);
+    background-image: linear-gradient(#87CEEB,#E0F6FF);
+    position:relative;
+    overflow: hidden;
+}
+
+#title-game-over{
+    font-size:50px;
+    font-family: 'Silkscreen', cursive;
+    color: rgb(240, 76, 76);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+#button-restart-game{
+    width: 200px;
+    padding:15px;
+    font-size:20px;
+    font-family: 'Silkscreen', cursive;
+    background: none;
+    border: 2px solid rgb(240, 76, 76);
+    color: rgb(240, 76, 76);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    cursor:pointer;
+    transition: 1s;
+    display:none;
+}
+
+#button-restart-game:hover{
+    transition: 1s;
+    color: white;
+    background-color: rgb(240, 76, 76);
+}
+
+#title-score{
+    font-size:40px;
+    font-family: 'Silkscreen', cursive;
+    color: rgb(29, 24, 127);
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 5%;
+}
+
+#number-score{
+    font-size:40px;
+    font-family: 'Silkscreen', cursive;
+    color: rgb(70, 95, 206);
+}
+
+#clouds{
+    position: absolute;
+    z-index: 1;
+    right: -350px;
+    top: 60px;
+}
+.anime-clouds-now{
+    animation: animate-clouds 20s infinite linear;
+}
+
+#mario{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+.anime-mario-now{
+    animation: animate-mario 800ms 1 ease-in-out;
+}
+
+#pipe{
+    position: absolute;
+    right: -50px;
+    /* left: 110px; */
+    bottom: 0px;
+}
+.anime-pipe-now{
+    animation: animate-pipe 2s infinite linear;
+}
+
+
+@keyframes animate-clouds{
+    from{
+        right: -350px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes animate-pipe {
+    from{
+        right: -60px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes animate-mario{
+    0%{
+        bottom:0px
+    }
+    50%{
+        bottom:180px
+    }
+    100%{
+        bottom:0px;
+    }
+}

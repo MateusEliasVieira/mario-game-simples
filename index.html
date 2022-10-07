@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+
+    <div id="game-board">
+        <h1 id="title-game-over">Game Over</h1>
+        <button id="button-restart-game">Restart</button>
+        <h1 id="title-score">Score <b id="number-score">0</b></h1>
+        <img id="clouds" class="anime-clouds-now" src="images/clouds.png" width="350px" alt="imagem do mario">
+        <img id="mario" class="" src="images/mario.gif" width="80px" alt="imagem do mario">
+        <img id="pipe" class="anime-pipe-now" src="images/pipe.png" width="50px" height="60px" alt="imagem do cano">
+    </div>
+
+    <audio id="sound-jump" src="midia/som-pulo.mp3"></audio>
+    <audio id="sound-game-over" src="midia/som-game-over.mp3"></audio>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
