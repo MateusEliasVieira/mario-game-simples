@@ -5,6 +5,8 @@ const game_board = document.getElementById('game-board');
 const title_game_over = document.getElementById('title-game-over'); 
 const btn_restart = document.getElementById('button-restart-game');
 const number_score = document.getElementById('number-score');
+const title_total = document.getElementById('title-total');
+const number_total = document.getElementById('number-total');
 const sound_jump = document.getElementById('sound-jump');
 const sound_game_over = document.getElementById('sound-game-over');
 
@@ -17,6 +19,7 @@ const game_over = (positionClouds,positionPipe,positionMario) => {
     clouds.style.left = positionClouds+"px";
     game_board.removeEventListener("click",jump);
     title_game_over.style.display = "block";
+    title_total.style.display = "block";
     btn_restart.style.display = "block";
     btn_restart.addEventListener("click",()=>{
         window.location.reload();
@@ -27,6 +30,7 @@ const score = () => {
     let value = Number(number_score.innerHTML);
     value += 0.5;
     number_score.innerHTML = Math.round(value);
+    number_total.innerHTML = Math.round(value);
 }
 
 const jump = () => {
