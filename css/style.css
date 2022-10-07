@@ -17,7 +17,7 @@
 }
 
 #box-game-over{
-    margin-top:calc(100vh - 60vh);
+    margin-top:calc(100vh - 65vh);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,14 +25,14 @@
 }
 
 #title-game-over{
-    font-size:40px;
+    font-size:30px;
     font-family: 'Silkscreen', cursive;
     color: rgb(240, 76, 76);
     display: none;
 }
 
 #title-total{
-    font-size:40px;
+    font-size:30px;
     font-family: 'Silkscreen', cursive;
     color: rgb(240, 76, 76);
     display:none;
@@ -59,17 +59,18 @@
 }
 
 #title-score{
-    font-size:40px;
+    width: 100%;
+    text-align: center;
+    font-size:30px;
     font-family: 'Silkscreen', cursive;
     color: rgb(29, 24, 127);
     position: absolute;
     z-index: 2;
-    top: 10px;
-    left: 5%;
+    top: 5px;
 }
 
 #number-score{
-    font-size:40px;
+    font-size:30px;
     font-family: 'Silkscreen', cursive;
     color: rgb(70, 95, 206);
 }
@@ -128,7 +129,7 @@
         bottom:0px
     }
     50%{
-        bottom:180px
+        bottom:110px
     }
     100%{
         bottom:0px;
